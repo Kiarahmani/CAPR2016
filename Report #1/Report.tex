@@ -221,7 +221,7 @@ Now an operation \(op\) is submitted to the replica whose consistency guarantee 
 $(vis(a,b))\wedge(vis(b,\eta)) \Rightarrow (vis(a,\eta))$. Since this is a wait-free contract, there is no need to block \(op\). However, the shim must automatically figure out what subset of \(\{x,y,A,B,C\}\) is safe to be shown to \(op\). \begin{center}
 \includegraphics[scale=1]{c4.pdf}
 \end{center}
-For this easy example, we can see that the maximal visibility set for \(op\) is \(\{x,y,B\}\); because if we include \(A\) in the visibility set, that means \(vis(A,\eta)\) holds, and since \(vis(z,A)\) also holds, based on \(op\)'s contract, \(vis (z,\eta)\) must also hold, which is not the case because \(z\) is not available at the replica yet. Moreover, since \(A\) is not in the visibility set, with a similar reasoning \(C\) also cannot be included. \\
+For this example, we can see that the maximal visibility set for \(op\) is \(\{x,y,B\}\); because if we include \(A\) in the visibility set, that means \(vis(A,\eta)\) holds, and since \(vis(z,A)\) also holds, based on \(op\)'s contract, \(vis (z,\eta)\) must also hold, which is not possible at the moment, because \(z\) is not available at the replica yet. Moreover, since \(A\) is not in the visibility set, with a similar reasoning \(C\) also cannot be included. \\
 We successfully, translated this problem into a Max-SAT problem as follows: Find an assignment for each variable that satisfies the following hard constraints and maximizes the number of soft constraints. All variables that are assigned true must be included in the visibility set. \\
 \begin {center}
 \includegraphics[scale=0.5]{c6.png}\\
@@ -229,26 +229,30 @@ We successfully, translated this problem into a Max-SAT problem as follows: Find
 The soft constraints clearly represent the presence of the effects in the visibility set, and the hard constraints are built from this particular example's contract. Each line represents constraints on one of the effects: z is not available yet, so it cannot be True, \(x\) and \(y\) have no constraint because their original visibility sets were empty. For the rest, each clause represents one visibility relation that according to the contract must be satisfied. For example, the only clause for effect \(C\), clearly states that either \(C\) must not be true, or \(A\) must also be true (= present). 
 
 \subsection {SAT Formula Generator}
-Here we explain an algorithm to craft a Max-SAT instance similar to the previous example, given a contract. For the sake of simplicity, here we explain the algorithm for a simpler and more restricted type of contracts. We only consider contracts in which each effect appears only in at most two relations - i.e. no multi-edge node in the associated graph. We believe that our approach can easily be extended to support multi-edge graphs.
-
+Here we explain an algorithm to craft a Max-SAT instance similar to the previous example, given a contract. For the sake of simplicity, here we explain the algorithm for a simpler and more restricted type of contracts. We only consider contracts in which each effect appears only in at most two relations - i.e. no multi-edge node in the associated graph. The algorithm can easily be extended to support multi-edge graphs also -it just requires more book-keeping. 
 \begin{center}
-\includegraphics[scale=0.73]{c7.pdf} 
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.6\linewidth]{c7.pdf}
+  \captionof{figure}{Simplified Contracts}
+  \label{fig:test2}
+\end{minipage}
 \end{center}
 
-Our algorithm is a simple graph traversal that starts from \(\eta\) and goes up until reaches the last node before the red \(vis\) edge.  Starting from the base node, at each iteration, it covers one edge and computes the set for the next node and repeats for all edges. Later it computes the hard and soft constraints based on these sets: the soft constraints are always the conjunction of all present effects at the replica, but hard constraints are modified at each iteration. 
+Our algorithm is a graph traversal procedure that starts from \(\eta\) and goes up until reaches the last node before the red \(vis\) edge.  Starting from the base node, at each iteration, it covers one edge and computes the set for the next node and repeats for all edges. Later, it computes the hard and soft constraints based on these sets: the soft constraints are the conjunction of all present effects at the replica and assigned once, but hard constraints are modified at each iteration. 
 \\ \\ \\ \\ \\
 
-\begin{lstlisting}[language = Java , caption= Algorithm Sketch, escapeinside={*(}{*)}]
+\begin{lstlisting}[language = Java , caption= Algorithm, escapeinside={*(}{*)}]
 Input: list of edges [E_1, E_2, .... , E_k]; set A of available effects
-Output: Mapping from effects to sets of Clauses. 
+Output: Mapping from A to sets of hard clauses
 --------------------------------------------------------------------------
 H[1] = A; 
 for (i in [1...k-1])
 	if (E_i.type() == vis)
-		H[i+1] = union of visibility sets of all effects in H[i] 
+		H[i+1] = union of x.visibility() for all effects x in H[i] 
 		
 	else if(E_i.type() == so)
-			H[i+1] = union of in-session precedents of all effects in H[i]
+			H[i+1] = union of x.sess_precedents() for all effects x in H[i] 
 			
 //Now list H contains all effects at each node that satisfy the relation to the base effect at that node specified by the subgraph.	
 
@@ -270,7 +274,7 @@ for (i in [1...k-1])
 				add (not e)	
 \end{lstlisting}
 
-Note that this is not a precise algorithm yet. However, we manually computed the Max-SAT formula for a number of simple contracts and the algorithm seems right. In a nutshell, it just traverses the graph upward, and at each step figures out all effects that satisfy the relation given by the traversed subgraph to the base effect \(\eta\). When covering an edge of type \(r\), for each of the effects e present at the set associated with the current node,
+We manually computed the Max-SAT formula for a number of a number of contracts and the algorithm sketch above seems to work fine. In a nutshell, it just traverses the graph upward, and at each step figures out all effects that satisfy the relation given by the traversed subgraph to the base effect \(\eta\). When covering an edge of type \(r\), for each of the effects e present at the set associated with the current node,
  it finds out all effects \(a\) that satisfy relation \(r\) with \(e\),  and adds a clause to the hard constraints of \(e\). The clause is of the form \((\neg e \vee a)\) which obviously states that if e is going to be present (i.e is true), a must also be present. 
  
  \subsection{next steps?}
