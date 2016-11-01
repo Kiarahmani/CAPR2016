@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  5 OCT 2016 20:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  31 OCT 2016 20:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -174,7 +174,33 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen125
 \Gin@req@width=\dimen126
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen127
+\captionmargin@=\dimen128
+\captionwidth=\dimen129
+\caption@tempdima=\dimen130
+\caption@indent=\dimen131
+\caption@parindent=\dimen132
+\caption@hangindent=\dimen133
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\small \vskip \abovecap
+tionskip \sbox \@tempboxa {{\bfseries #1.} #2}\ifdim \wd \@tempboxa >\hsize {\b
+fseries #1.} #2\par \else \global \@minipagefalse \hb@xt@ \hsize {\hfil \box \@
+tempboxa \hfil }\fi \vskip \belowcaptionskip .
+\c@ContinuedFloat=\count117
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2015/05/11 v0.4x Insert pages of external PDF documents (AM)
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
@@ -182,15 +208,15 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count117
-\calc@Bcount=\count118
-\calc@Adimen=\dimen127
-\calc@Bdimen=\dimen128
+\calc@Acount=\count118
+\calc@Bcount=\count119
+\calc@Adimen=\dimen134
+\calc@Bdimen=\dimen135
 \calc@Askip=\skip45
 \calc@Bskip=\skip46
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count119
+\calc@Ccount=\count120
 \calc@Cskip=\skip47
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/eso-pic/eso-pic.sty
@@ -220,17 +246,92 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 ))
-\AM@pagewidth=\dimen129
-\AM@pageheight=\dimen130
+\AM@pagewidth=\dimen136
+\AM@pageheight=\dimen137
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2015/05/11 v0.4x Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box54
 \AM@toc@title=\toks20
-\c@AM@survey=\count120
+\c@AM@survey=\count121
 \AM@templatesizebox=\box55
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2013/01/06 v5.00 algorithms environments
+\c@AlgoLine=\count122
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+********************************************************
+Package `algorithm2e' Release 5.0 -- january 06 2013 --
+- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
+- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
+subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
+- Author: Christophe Fiorio (cfiorio@um2.fr)
+********************************************************
+\skiptotal=\skip48
+\skiplinenumber=\skip49
+\skiprule=\skip50
+\skiphlne=\skip51
+\skiptext=\skip52
+\skiplength=\skip53
+\algomargin=\skip54
+\skipalgocfslide=\skip55
+\algowidth=\dimen138
+\inoutsize=\dimen139
+\inoutindent=\dimen140
+\interspacetitleruled=\dimen141
+\interspacealgoruled=\dimen142
+\interspacetitleboxruled=\dimen143
+\algocf@inoutbox=\box56
+\algocf@inputbox=\box57
+\AlCapSkip=\skip56
+\AlCapHSkip=\skip57
+\algoskipindent=\skip58
+\algocf@nlbox=\box58
+\algocf@hangingbox=\box59
+\algocf@untilbox=\box60
+\algocf@skipuntil=\skip59
+\algocf@capbox=\box61
+\algoheightruledefault=\skip60
+\algoheightrule=\skip61
+\algotitleheightruledefault=\skip62
+\algotitleheightrule=\skip63
+\c@algocfline=\count123
+\c@algocfproc=\count124
+\c@algocf=\count125
+\algocf@algoframe=\box62
+\algocf@algobox=\box63
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count126
+\lst@gtempboxa=\box64
+\lst@token=\toks21
+\lst@length=\count127
+\lst@currlwidth=\dimen144
+\lst@column=\count128
+\lst@pos=\count129
+\lst@lostspace=\dimen145
+\lst@width=\dimen146
+\lst@newlines=\count130
+\lst@lineno=\count131
+\lst@maxwidth=\dimen147
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+\c@lstnumber=\count132
+\lst@skipnumbers=\count133
+\lst@framebox=\box65
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2014/09/06 1.5e listings configuration
+))
+Package: listings 2014/09/06 1.5e (Carsten Heinz)
+
 (/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
@@ -241,60 +342,51 @@ Package ifvtex Info: VTeX not detected.
 (/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count121
-\Gm@cntv=\count122
-\c@Gm@tempcnt=\count123
-\Gm@bindingoffset=\dimen131
-\Gm@wd@mp=\dimen132
-\Gm@odd@mp=\dimen133
-\Gm@even@mp=\dimen134
-\Gm@layoutwidth=\dimen135
-\Gm@layoutheight=\dimen136
-\Gm@layouthoffset=\dimen137
-\Gm@layoutvoffset=\dimen138
-\Gm@dimlist=\toks21
+\Gm@cnth=\count134
+\Gm@cntv=\count135
+\c@Gm@tempcnt=\count136
+\Gm@bindingoffset=\dimen148
+\Gm@wd@mp=\dimen149
+\Gm@odd@mp=\dimen150
+\Gm@even@mp=\dimen151
+\Gm@layoutwidth=\dimen152
+\Gm@layoutheight=\dimen153
+\Gm@layouthoffset=\dimen154
+\Gm@layoutvoffset=\dimen155
+\Gm@dimlist=\toks22
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-) (./Report.aux
-
-LaTeX Warning: Label `cap' multiply defined.
-
-
-LaTeX Warning: Label `cap' multiply defined.
-
-
-LaTeX Warning: Label `cap' multiply defined.
-
-)
+) (./Report.aux)
 \openout1 = `Report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
- (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+
+(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count124
-\scratchdimen=\dimen139
-\scratchbox=\box56
-\nofMPsegments=\count125
-\nofMParguments=\count126
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count127
-\MPscratchDim=\dimen140
-\MPnumerator=\count128
-\makeMPintoPDFobject=\count129
-\everyMPtoPDFconversion=\toks23
+\scratchcounter=\count137
+\scratchdimen=\dimen156
+\scratchbox=\box66
+\nofMPsegments=\count138
+\nofMParguments=\count139
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count140
+\MPscratchDim=\dimen157
+\MPnumerator=\count141
+\makeMPintoPDFobject=\count142
+\everyMPtoPDFconversion=\toks24
 ) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -339,8 +431,23 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box57
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: Incompatible package detected (regarding \@caption).
+(caption)             \@caption = \long macro:#1[#2]#3->\par \addcontentsline {
+\csname ext@#1\endcsname }{#1}{\protect \numberline {\csname the#1\endcsname }{
+\ignorespaces #2}}\begingroup \@parboxrestore \@makecaption {\csname fnum@#1\en
+dcsname }{\ignorespaces #3}\par \endgroup .
 
+
+Package caption Warning: \caption will not be redefined since it's already
+(caption)                redefined by a document class or package which is
+(caption)                unknown to the caption package.
+See the caption package documentation for explanation.
+
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\AtBeginShipoutBox=\box67
+\c@lstlisting=\count143
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -375,11 +482,11 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 74.
+LaTeX Font Info:    Try loading font information for U+msa on input line 105.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 74.
+LaTeX Font Info:    Try loading font information for U+msb on input line 105.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -387,84 +494,154 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <Anom1.pdf, id=1, 447.14052pt x 190.66231pt>
 File: Anom1.pdf Graphic file (type pdf)
  <use Anom1.pdf>
-Package pdftex.def Info: Anom1.pdf used on input line 89.
+Package pdftex.def Info: Anom1.pdf used on input line 120.
 (pdftex.def)             Requested size: 268.28638pt x 114.39825pt.
  [1
 
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Anom1
 .pdf>]
-<gap.pdf, id=20, 269.55705pt x 368.17549pt>
+<gap.pdf, id=22, 269.55705pt x 368.17549pt>
 File: gap.pdf Graphic file (type pdf)
  <use gap.pdf>
-Package pdftex.def Info: gap.pdf used on input line 103.
+Package pdftex.def Info: gap.pdf used on input line 142.
 (pdftex.def)             Requested size: 103.77773pt x 141.7452pt.
 
-<Gap1.pdf, id=21, 407.62288pt x 368.17549pt>
+<Gap1.pdf, id=23, 407.62288pt x 368.17549pt>
 File: Gap1.pdf Graphic file (type pdf)
  <use Gap1.pdf>
-Package pdftex.def Info: Gap1.pdf used on input line 108.
+Package pdftex.def Info: Gap1.pdf used on input line 147.
 (pdftex.def)             Requested size: 154.8983pt x 139.90814pt.
 
-<Gap2.pdf, id=22, 407.62288pt x 368.17549pt>
+<Gap2.pdf, id=24, 407.62288pt x 368.17549pt>
 File: Gap2.pdf Graphic file (type pdf)
  <use Gap2.pdf>
-Package pdftex.def Info: Gap2.pdf used on input line 109.
+Package pdftex.def Info: Gap2.pdf used on input line 148.
 (pdftex.def)             Requested size: 154.8983pt x 139.90814pt.
- [2 <./gap.pdf> <./Gap1.pdf> <./Gap2.pdf>] <Gap3.pdf, id=45, 453.64482pt x 368.
-17549pt>
+ [2 <./gap.pdf>]
+<Gap3.pdf, id=37, 453.64482pt x 368.17549pt>
 File: Gap3.pdf Graphic file (type pdf)
-
-<use Gap3.pdf>
-Package pdftex.def Info: Gap3.pdf used on input line 123.
+ <use Gap3.pdf>
+Package pdftex.def Info: Gap3.pdf used on input line 162.
 (pdftex.def)             Requested size: 195.06346pt x 158.31236pt.
- <Gap5.pdf, id=46, 479.94305pt x 368.17549pt>
+
+<Gap5.pdf, id=38, 479.94305pt x 368.17549pt>
 File: Gap5.pdf Graphic file (type pdf)
  <use Gap5.pdf>
-Package pdftex.def Info: Gap5.pdf used on input line 124.
+Package pdftex.def Info: Gap5.pdf used on input line 163.
 (pdftex.def)             Requested size: 206.37148pt x 158.31236pt.
-
-[3 <./Gap3.pdf> <./Gap5.pdf>] <c.pdf, id=67, 466.79393pt x 315.24777pt>
+ [3 <./Gap1.pdf> <./Gap2.pdf> <./Gap3.pdf> <./Gap5.pdf>] <c.pdf, id=67, 466.793
+93pt x 315.24777pt>
 File: c.pdf Graphic file (type pdf)
 
 <use c.pdf>
-Package pdftex.def Info: c.pdf used on input line 141.
+Package pdftex.def Info: c.pdf used on input line 180.
 (pdftex.def)             Requested size: 163.38031pt x 110.33836pt.
  <c1.pdf, id=68, 427.34656pt x 216.62933pt>
 File: c1.pdf Graphic file (type pdf)
  <use c1.pdf>
-Package pdftex.def Info: c1.pdf used on input line 152.
+Package pdftex.def Info: c1.pdf used on input line 191.
 (pdftex.def)             Requested size: 170.9356pt x 86.65018pt.
- [4 <./c.pdf> <./c1.pdf>] [5] (./Report.aux)
+ [4 <./c.pdf> <./c1.pdf>] <c2.pdf, id=85, 190.66231pt x 139.35062pt>
+File: c2.pdf Graphic file (type pdf)
+ <use c2.pdf>
+Package pdftex.def Info: c2.pdf used on input line 205.
+(pdftex.def)             Requested size: 129.00269pt x 94.28723pt.
 
-LaTeX Warning: There were multiply-defined labels.
+<c3.pdf, id=86, 190.66231pt x 139.35062pt>
+File: c3.pdf Graphic file (type pdf)
+ <use c3.pdf>
+Package pdftex.def Info: c3.pdf used on input line 211.
+(pdftex.def)             Requested size: 129.00269pt x 94.28723pt.
 
- ) 
+<c4.pdf, id=87, 172.91602pt x 98.61844pt>
+File: c4.pdf Graphic file (type pdf)
+ <use c4.pdf>
+Package pdftex.def Info: c4.pdf used on input line 222.
+(pdftex.def)             Requested size: 172.91557pt x 98.61818pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--226
+
+ []
+
+[5 <./c2.pdf> <./c3.pdf> <./c4.pdf>]
+<c6.png, id=109, 514.92375pt x 146.5475pt>
+File: c6.png Graphic file (type png)
+ <use c6.png>
+Package pdftex.def Info: c6.png used on input line 227.
+(pdftex.def)             Requested size: 257.46124pt x 73.27356pt.
+
+<c7.pdf, id=110, 239.97655pt x 175.54584pt>
+File: c7.pdf Graphic file (type pdf)
+ <use c7.pdf>
+Package pdftex.def Info: c7.pdf used on input line 235.
+(pdftex.def)             Requested size: 175.18141pt x 128.14738pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--240
+
+ []
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+) [6 <./c6.png> <./c7.pdf>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 256.
+
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 256.
+Missing character: There is no ç in font cmr9!
+
+[7] [8] (./Report.aux) ) 
 Here is how much of TeX's memory you used:
- 4038 strings out of 493089
- 55910 string characters out of 6134842
- 136285 words of memory out of 5000000
- 7449 multiletter control sequences out of 15000+600000
+ 7811 strings out of 493089
+ 113888 string characters out of 6134842
+ 342610 words of memory out of 5000000
+ 11182 multiletter control sequences out of 15000+600000
  11125 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,7n,39p,708b,341s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
-sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
-/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
-ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on Report.pdf (5 pages, 780558 bytes).
+ 38i,9n,42p,697b,1632s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmbx9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr5.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.p
+fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr
+/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on Report.pdf (8 pages, 906324 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
- 91 compressed objects within 1 object stream
+ 182 PDF objects out of 1000 (max. 8388607)
+ 128 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
